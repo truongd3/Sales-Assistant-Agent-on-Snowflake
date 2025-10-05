@@ -16,13 +16,13 @@ This project develops a **Sales Assistant Agent** using data tools in **Snowflak
 
 - Extract PDF content
 - Split PDFs into chunks
-- Classify the PDFs: Uses `CORTEX.CLASSIFY_TEXT` to classify documents as `Bike` or `Snow` based on the first text chunk and filename
+- Classify the PDFs: Uses `CORTEX.CLASSIFY_TEXT` to classify documents as `Bike` or `Ski` based on the first text chunk and filename
 
 ### Step 2: Process Images
 
 - Use [Claude 3.5 Sonnot](https://www.anthropic.com/news/claude-3-5-sonnet) model API to
   - Describe image content
-  - Classify image as `Bike` or `Snow`
+  - Classify image as `Bike` or `Ski`
   - Insert result into the same `DOCS_CHUNKS_TABLE`
 
 ### Step 3: Enable Cortex Search
